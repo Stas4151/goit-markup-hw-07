@@ -17,6 +17,11 @@
 .footer-social {
     display: inline-block;
     margin-left: 70px;
+
+    .icons {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .footer-join {
@@ -30,19 +35,14 @@
     color: var(--primary-site-color);
 }
 
-.footer-social-icons {
-    display: flex;
-    justify-content: center;
-}
-
 .social-item-join {
     width: 44px;
     height: 44px;
     margin-right: 10px;
-}
 
-.social-item-join:last-child {
-    margin-right: 0;
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .footer-socials {
@@ -57,11 +57,11 @@
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-socials:hover,
-.footer-socials:focus {
-    background-color: var(--second-color);
+    &:hover,
+    &:focus {
+        background-color: var(--second-color);
+    }
 }
 
 .footer,
@@ -82,29 +82,29 @@
     color: var(--contacts-color);
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.adress .link:hover,
-.adress .link:focus,
-.adress .tel:hover,
-.adress .tel:focus,
-.adress .mail:hover,
-.adress .mail:hover {
-    color: var(--second-color);
+    &.link:hover,
+    &.link:focus,
+    &.tel:hover,
+    &.tel:focus,
+    &.mail:hover,
+    &.mail:hover {
+        color: var(--second-color);
+    }
 }
 
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    .input {
+        margin-left: 93px;
+    }
 }
 
 .link-footer,
 .mail-footer {
     margin-bottom: 9px;
-}
-
-.footer-input {
-    margin-left: 93px;
 }
 
 .footer-subscription {
@@ -168,11 +168,11 @@
 
     color: var(--primary-site-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-button:hover,
-.footer-button:focus {
-    background-color: var(--hover-color);
+    &:hover,
+    &:focus {
+        background-color: var(--hover-color);
+    }
 }
 
 .footer-icon-button {
