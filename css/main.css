@@ -813,7 +813,7 @@ header {
           align-items: baseline;
 }
 
-.footer-adress {
+.adress {
   margin-top: 20px;
   margin-bottom: 62px;
   font-weight: 400;
@@ -1007,7 +1007,7 @@ header {
   fill: var(--primary-site-color);
 }
 
-.buttons-list .button-project {
+.buttons-list .buttons-list__project {
   color: var(--main-text-color);
   font-family: inherit;
   font-weight: 500;
@@ -1041,12 +1041,12 @@ header {
   color: var(--primary-site-color);
 }
 
-.button-project {
+.buttons-list__project {
   padding: 6px 22px;
   border-radius: 4px;
   border: none;
 }
-.button-project:hover {
+.buttons-list__project:hover {
   color: var(--primary-site-color);
   background-color: var(--second-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1074,7 +1074,7 @@ header {
   line-height: 1.7;
 }
 
-.project-photo {
+.thumb__photo {
   width: 100%;
   height: auto;
 }
@@ -1094,26 +1094,26 @@ header {
   margin-bottom: 94px;
 }
 
-.title {
+.project__box {
   -ms-flex-preferred-size: calc((100% - 60px) / 3);
       flex-basis: calc((100% - 60px) / 3);
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.title:nth-child(3n+3) {
+.project__box:nth-child(3n+3) {
   margin-right: 0;
 }
-.title:hover, .title:focus {
+.project__box:hover, .project__box:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-thumb {
+.thumb {
   position: relative;
   overflow: hidden;
 }
 
-.project-overlay {
+.overlay {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1127,7 +1127,7 @@ header {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project-link:hover .project-overlay {
+.project-link:hover .overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1136,12 +1136,12 @@ header {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.overlay-content {
+.overlay__content {
   display: inline-block;
   padding: 63px 24px;
 }
 
-.overlay-content .overlay-text {
+.overlay__content .overlay__text {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -1151,7 +1151,7 @@ header {
   color: var(--primary-site-color);
 }
 
-.project-describe {
+.describe {
   padding: 24px 20px;
   border-left: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;

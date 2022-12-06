@@ -1,4 +1,4 @@
-.buttons-list .button-project {
+.buttons-list .buttons-list__project {
     color: var(--main-text-color);
 
     font-family: inherit;
@@ -30,7 +30,7 @@
     }
 }
 
-.button-project {
+.buttons-list__project {
     padding: 6px 22px;
     border-radius: 4px;
     border: none;
