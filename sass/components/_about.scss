@@ -2,7 +2,7 @@
     margin-bottom: 94px;
 }
 
-.about-title {
+.about__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.7;
@@ -12,22 +12,22 @@
     margin-bottom: 50px;
 }
 
-.about-list {
+.about__list {
     display: flex;
     justify-content: space-between;
-}
 
-.about-list:last-child(1) {
+&:last-child(1) {
     margin-right: 30px;
+    }
 }
 
-.about-img {
+.about__img {
     position: relative;
 
     display: block;
 }
 
-.about-bg {
+.about__bg {
     position: absolute;
     width: 100%;
     height: 70px;
@@ -40,7 +40,7 @@
     background: rgba(47, 48, 58, 0.8);
 }
 
-.about-paragraph {
+.about__paragraph {
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16/14);

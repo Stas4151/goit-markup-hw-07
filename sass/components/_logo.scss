@@ -1,5 +1,4 @@
-.logo-first,
-.logo-second {
+@mixin font($family, $style, $weight, $size, $height, $spacing) {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -8,37 +7,34 @@
     letter-spacing: 0.03em;
 }
 
-.logo-first:focus,
-.logo-second:focus {
+.logo__first {
+    @include font('Raleway', normal, 700, 26px, calc(31/26), 0.03em);
+
     color: var(--second-color);
+
+    .logo__first:focus {
+        color: var(--second-color);
+    }
 }
 
-.logo-first {
-    color: var(--second-color);
-}
+.logo__second {
+    @include font('Raleway', normal, 700, 26px, calc(31/26), 0.03em);
 
-.logo-second {
     color: var(--main-text-color);
+
+    &:focus {
+        color: var(--second-color);
+    }
 }
 
-.logo-head {
-    margin-right: 93px;
-}
+.logo__first--footer {
+    @include font('Raleway', normal, 700, 26px, calc(31/26), 0.03em);
 
-.logo-footer-first,
-.logo-footer-second {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31/26);
-    letter-spacing: 0.03em;
-}
-
-.logo-footer-first {
     color: var(--second-color);
 }
 
-.logo-footer-second {
+.logo__second--footer {
+    @include font('Raleway', normal, 700, 26px, calc(31/26), 0.03em);
+
     color: var(--primary-site-color);
 }

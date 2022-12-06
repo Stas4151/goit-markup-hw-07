@@ -2,11 +2,6 @@
     position: relative;
 
     overflow: hidden;
-
-    &:hover .project-overlay {
-        transform: translateY(0);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
 }
 
 .project-titles h2 {
@@ -76,6 +71,11 @@
 
     transform: translateY(101%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .project-link:hover & {
+        transform: translateY(0);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
 .overlay-content {
