@@ -92,12 +92,15 @@ header {
     display: flex;
 }
 
-.contact__auth-contact .link:nth-child(1) {
-    margin-right: 30px;
+.contact .link {
     display: flex;
     justify-content: center;
     align-items: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mail-link {
+    margin-right: 30px;
 }
 
 .contact__icon {
