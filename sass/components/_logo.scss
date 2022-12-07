@@ -1,12 +1,3 @@
-@mixin font($family, $style, $weight, $size, $height, $spacing) {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31/26);
-    letter-spacing: 0.03em;
-}
-
 .logo__first {
     @include font('Raleway', normal, 700, 26px, calc(31/26), 0.03em);
 

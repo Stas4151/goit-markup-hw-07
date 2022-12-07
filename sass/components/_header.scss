@@ -31,14 +31,6 @@ header {
     color: var(--second-color);
 }
 
-%current {
-    position: relative;
-
-    display: block;
-
-    text-decoration: none;
-}
-
 .current-study {
     @extend %current;
 
@@ -81,7 +73,7 @@ header {
     color: var(--second-text-color);
 
     &:hover,
-    &k:focus {
+    &:focus {
         color: var(--second-color);
     }
 }

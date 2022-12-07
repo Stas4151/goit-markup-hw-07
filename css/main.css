@@ -11,22 +11,6 @@
   --hover-color: #188CE8;
 }
 
-body {
-  background-color: var var(--primary-site-color);
-  color: var(--main-text-color);
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.03em;
-  font-size: 14px;
-}
-
-a {
-  text-decoration: none;
-}
-
-.list {
-  list-style: none;
-}
-
 h1,
 h2,
 h3,
@@ -53,6 +37,28 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+body {
+  background-color: var var(--primary-site-color);
+  color: var(--main-text-color);
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.current-portfolio, .current-study {
+  position: relative;
+  display: block;
+  text-decoration: none;
 }
 
 .logo__first {
@@ -101,12 +107,12 @@ img {
   color: var(--primary-site-color);
 }
 
-nav .site-nav {
+nav .menu {
   font-weight: 500;
   line-height: 1.14;
 }
 
-.auth-nav {
+.contact {
   color: var(--second-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -152,12 +158,6 @@ header {
   color: var(--second-color);
 }
 
-.current-portfolio, .current-study {
-  position: relative;
-  display: block;
-  text-decoration: none;
-}
-
 .current-study::after {
   content: "";
   position: absolute;
@@ -185,7 +185,7 @@ header {
 .contact .link {
   color: var(--second-text-color);
 }
-.contact .link:hover, .contact .linkk:focus {
+.contact .link:hover, .contact .link:focus {
   color: var(--second-color);
 }
 
@@ -239,9 +239,6 @@ header {
 }
 
 .hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -931,7 +928,7 @@ header {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -958,7 +955,7 @@ header {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
   background: #2F303A;
   border: 1px solid rgba(255, 255, 255, 0.3);
